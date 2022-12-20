@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulseem Client Database</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="grid">
+    <aside class="sidebar flex-center">
+      <div class="logo"><img src="assets/logo.png" alt="Pulseem" /></div>
+      <!-- illustration -->
+      <div class="illustration">
+        <img src="assets/illustration.png" alt="" />
+      </div>
+    </aside>
+    <main class="mainContent">
+      <!-- modal -->
+      <div class="addClientModal" data-add-modal>
+        <button id="close">X</button>
+        <h2 style="text-align: center">Add Client</h2>
+        <form action="#" class="modal">
+          <div class="field">
+            <label for="name">Name: </label>
+            <input type="text" id="name" plachodler="Enter name " />
+          </div>
+          <div class="field">
+            <label for="email">Email: </label>
+            <input type="email" id="email" plachodler="Enter your email" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" plachodler="Enter phone number " />
+          </div>
+
+          <div class="submit flex-center">
+            <input class="btn" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <!-- modal -->
+      <div class="updateClientModal" data-update-modal>
+        <button id="close">X</button>
+        <h2 style="text-align: center">Update Client</h2>
+        <form action="#" class="modal">
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" plachodler="Enter name " />
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" plachodler="Enter your email" />
+          </div>
+          <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" plachodler="Enter phone number " />
+          </div>
+
+          <div class="submit flex-center">
+            <input class="btn" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+
+      <!-- main Content start -->
+      <div class="container">
+        <div class="header flex-between">
+          <h2 class="title">Clients</h2>
+          <div>
+            <a href="#" class="btn" id="addBtn"
+              >Add Client <span><img src="assets/add.png" alt="" /></span
+            ></a>
+          </div>
+        </div>
+        <div class="clientList">
+          <!-- card -->
+          <div class="client card">
+            <p>Kojo Kewa Junior</p>
+            <p>kojokewajunior123@gmail.com</p>
+            <p>0554378923</p>
+            <div class="actions">
+              <button id="updateBtn">
+                <img src="assets/update.png" alt="" />
+              </button>
+              <button id="deleteBtn">
+                <img src="assets/delete.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <!-- card -->
+          <div class="client card">
+            <p>Kojo Kewa Junior</p>
+            <p>kojokewajunior123@gmail.com</p>
+            <p>0554378923</p>
+            <div class="actions">
+              <button id="updateBtn">
+                <img src="assets/update.png" alt="" />
+              </button>
+              <button id="deleteBtn">
+                <img src="assets/delete.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
